@@ -1,0 +1,79 @@
+body {
+	width: 100%;
+	height: 1000px;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+
+
+}
+
+
+
+main { 
+    /* The image used */
+
+   background-image: url("../img/room.jpg");
+
+    /* Full height */
+ 	height: 1198px;
+ 	width: auto;
+ 
+
+    /* Center and scale the image nicely */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h1 {
+	margin: 0;
+	color: white;
+	padding-top: 25%;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 70px;
+	
+}
+
+body img {
+	bottom: 0;
+	position: absolute;
+	width: 680px;
+}
+
+.skull1 img {
+	width: 248px;
+	bottom: 888px;
+	left: 334px;
+	position: fixed;
+	z-index: 5;
+}
+
+.skull2 img {
+
+	width: 1243px;
+	position: fixed;
+}
+
+.brain img{
+	bottom: 597px;
+	left: 150px;
+	width: 701px;
+}
+
+.vibrate {
+    animation-name: my;
+    animation-duration: 1000ms;
+    transform-origin: 2px;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes my {
+    0% { transform: scale(1); }
+    30% { transform: scale(0.98); }
+    
+    100% { transform: scale(1); }
+}
